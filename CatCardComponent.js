@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
+    CardTitle, Button
 } from 'reactstrap';
 
 class CatCardComponent extends Component {
@@ -12,7 +12,9 @@ class CatCardComponent extends Component {
         return (
             <div>
                 <Card>
-                    <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap">{this.props.cats.image}</CardImg>
+                    <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap">
+                        {this.props.cats.image}
+                    </CardImg>
                     <CardBody>
                         <CardTitle>{this.props.cats.name}</CardTitle>
                         <CardText>
