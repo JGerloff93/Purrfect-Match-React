@@ -66,7 +66,7 @@ export class MainComponent extends Component {
         };
     }
     render() {
-        let CatCardComponent = this.state.people.map(cat => {
+        let cardList = this.state.cats.map(cat => {
             return (
                 <Col sm="4">
                     <CatCardComponent cat={cat}/>
@@ -79,7 +79,7 @@ export class MainComponent extends Component {
              
                 <CarouselComponent />
                 <Row>
-                    {CatCardComponent}
+                    {cardList}
                 </Row>
                 <FooterComponent/>
             </div>
